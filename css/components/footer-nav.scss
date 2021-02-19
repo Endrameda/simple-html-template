@@ -1,0 +1,27 @@
+.footer-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media all and (max-width: map-get($breaks, tablet_lg)) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+  }
+
+  @media all and (max-width: map-get($breaks, tablet)) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media all and (max-width: map-get($breaks, mobile)) {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  &__col {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}

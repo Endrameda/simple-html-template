@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="header__top">
+        <div class="header__top-container container">
+            <!-- Currency -->
+            <div class="currency">
+                <div class="currency__title">Currency:</div>
+                <select class="currency__select">
+                    <option value="GBP">GBP</option>
+                    <option value="RUB">RUB</option>
+                </select>
+            </div>
+            <div class="header__top-right">
+                <button class="auth">Register</button>
+                <button class="auth">Sign In</button>
+                <!-- basket -->
+                <div class="basket">
+                    <div class="basket__title js-basket-title">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>empty</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="basket__body" style="display: none">
+                        basket content
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel -->
+    <div class="carousel">
+        <div class="carousel__container">
+            <div class="header__bottom">
+                <div class="header__bottom-container container">
+                    <a href="javascript:undefined" class="logo">
+                        <img src="./img/logo.png" alt="Logo">
+                    </a>
+
+                    <div class="header__bottom-right">
+                        <nav class="main-nav">
+                            <ul class="main-nav__list">
+                                <li class="main-nav__item">
+                                    <span class="js-has-child">
+                                        <span>mens</span>
+                                        <span class="main-nav__arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </span>
+                                    <div class="main-nav__popup">
+                                        <div class="main-nav__popup-top">
+                                            <ul class="nav-col">
+                                                <li class="nav-col__title">casuals</li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Hoodies &
+                                                    Sweatshirts</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Polo Shirts</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Sportswear</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Trousers &
+                                                    Chinos</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">T-Shirts</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="nav-col">
+                                                <li class="nav-col__title">Formal</li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Shirts</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Suits</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Trousers</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-nav__popup-bottom">
+                                            Autumn sale!
+                                            up to 50% off
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-nav__item">
+                                    <span class="js-has-child">
+                                        <span>womens</span>
+                                        <span class="main-nav__arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </span>
+                                    <div class="main-nav__popup">
+                                        <div class="main-nav__popup-top">
+                                            <ul class="nav-col">
+                                                <li class="nav-col__title">casuals</li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Hoodies &
+                                                    Sweatshirts</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Polo Shirts</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Sportswear</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Trousers &
+                                                    Chinos</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">T-Shirts</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="nav-col">
+                                                <li class="nav-col__title">Formal</li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Shirts</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Suits</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Trousers</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-nav__popup-bottom">
+                                            Autumn sale!
+                                            up to 50% off
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="javascript:undefined">
+                                        the brand
+                                    </a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <span class="js-has-child">
+                                        <span> local stores</span>
+                                        <span class="main-nav__arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </span>
+                                    <div class="main-nav__popup">
+                                        <div class="main-nav__popup-top">
+                                            <ul class="nav-col">
+                                                <li class="nav-col__title">casuals</li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Hoodies &
+                                                    Sweatshirts</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Polo Shirts</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Sportswear</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Trousers &
+                                                    Chinos</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">T-Shirts</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="nav-col">
+                                                <li class="nav-col__title">Formal</li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Shirts</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Suits</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Trousers</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-nav__popup-bottom">
+                                            Autumn sale!
+                                            up to 50% off
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-nav__item">
+                                    <span class="js-has-child">
+                                        <span>look book</span>
+                                        <span class="main-nav__arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </span>
+                                    <div class="main-nav__popup">
+                                        <div class="main-nav__popup-top">
+                                            <ul class="nav-col">
+                                                <li class="nav-col__title">casuals</li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Hoodies &
+                                                    Sweatshirts</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Polo Shirts</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Sportswear</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Trousers &
+                                                    Chinos</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">T-Shirts</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="nav-col">
+                                                <li class="nav-col__title">Formal</li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                                </li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Shirts</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Suits</a></li>
+                                                <li class="nav-col__item"><a href="javascript:undefined">Trousers</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-nav__popup-bottom">
+                                            Autumn sale!
+                                            up to 50% off
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="search">
+                            <label class="search__label">
+                                <input placeholder="Search..." type="text">
+                                <i class="fas fa-search"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-container js-init-header-carousel">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./img/slider.png" alt="">
+                        <button class="carousel__button button">shop men’s collection</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider.png" alt="">
+                        <button class="carousel__button button">shop men’s collection</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider.png" alt="">
+                        <button class="carousel__button button">shop men’s collection</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Products -->
+<section class="products">
+    <div class="products__container products__container--border-top">
+        <div class="products__filter">
+            <div class="products__filter-item active">popular</div>
+            <div class="products__filter-item">new arrivals</div>
+            <div class="products__filter-item">best sellers</div>
+            <div class="products__filter-item">special offers</div>
+            <div class="products__filter-item">coming soon</div>
+        </div>
+    </div>
+    <div class="products__container products__container--grid products__container--border-bottom">
+        <div class="products__item">
+            <div class="products__price-list">
+                <span class="products__price">£89.99</span>
+            </div>
+            <img src="./img/products/image-1.png" alt="">
+            <div class="products__info-icon">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="products__image-list">
+                <img src="./img/products/small-image-front.png" alt="">
+                <img src="./img/products/small-image-back.png" alt="">
+            </div>
+            <div class="products__item-info">
+                <h3 class="products__name">Womens burnt orange casual tee £29.95</h3>
+                <p class="products__description">
+                    Classic casual t-shirt for women on the move.
+                    100% cotton.
+                </p>
+                <div class="products__buttons">
+                    <button class="products__button">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button class="products__button">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="products__button">
+                        <i class="fas fa-compress-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="products__item">
+            <div class="products__price-list">
+                <span class="products__price">£47.50</span>
+            </div>
+            <img src="./img/products/image-2.png" alt="">
+            <div class="products__info-icon">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="products__image-list">
+                <img src="./img/products/small-image-front.png" alt="">
+                <img src="./img/products/small-image-back.png" alt="">
+            </div>
+            <div class="products__item-info">
+                <h3 class="products__name">Womens burnt orange casual tee £29.95</h3>
+                <p class="products__description">
+                    Classic casual t-shirt for women on the move.
+                    100% cotton.
+                </p>
+                <div class="products__buttons">
+                    <button class="products__button">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button class="products__button">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="products__button">
+                        <i class="fas fa-compress-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="products__item">
+            <div class="products__price-list">
+                <span class="products__price products__price--discount">£107</span>
+                <span class="products__price">£89.99 </span>
+            </div>
+            <img src="./img/products/image-3.png" alt="">
+            <div class="products__info-icon">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="products__image-list">
+                <img src="./img/products/small-image-front.png" alt="">
+                <img src="./img/products/small-image-back.png" alt="">
+            </div>
+            <div class="products__item-info">
+                <h3 class="products__name">Womens burnt orange casual tee £29.95</h3>
+                <p class="products__description">
+                    Classic casual t-shirt for women on the move.
+                    100% cotton.
+                </p>
+                <div class="products__buttons">
+                    <button class="products__button">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button class="products__button">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="products__button">
+                        <i class="fas fa-compress-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="products__item">
+            <div class="products__price-list">
+                <span class="products__price">£69.95 </span>
+            </div>
+            <img src="./img/products/image-4.png" alt="">
+            <div class="products__info-icon">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="products__image-list">
+                <img src="./img/products/small-image-front.png" alt="">
+                <img src="./img/products/small-image-back.png" alt="">
+            </div>
+            <div class="products__item-info">
+                <h3 class="products__name">Womens burnt orange casual tee £29.95</h3>
+                <p class="products__description">
+                    Classic casual t-shirt for women on the move.
+                    100% cotton.
+                </p>
+                <div class="products__buttons">
+                    <button class="products__button">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button class="products__button">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="products__button">
+                        <i class="fas fa-compress-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="products__item">
+            <div class="products__price-list">
+                <span class="products__price">£29.95 </span>
+            </div>
+            <img src="./img/products/image-5.png" alt="">
+            <div class="products__info-icon">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="products__image-list">
+                <img src="./img/products/small-image-front.png" alt="">
+                <img src="./img/products/small-image-back.png" alt="">
+            </div>
+            <div class="products__item-info">
+                <h3 class="products__name">Womens burnt orange casual tee £29.95</h3>
+                <p class="products__description">
+                    Classic casual t-shirt for women on the move.
+                    100% cotton.
+                </p>
+                <div class="products__buttons">
+                    <button class="products__button">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button class="products__button">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="products__button">
+                        <i class="fas fa-compress-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="products__item">
+            <div class="products__price-list">
+                <span class="products__price">£34.79 </span>
+            </div>
+            <img src="./img/products/image-6.png" alt="">
+            <div class="products__info-icon">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="products__image-list">
+                <img src="./img/products/small-image-front.png" alt="">
+                <img src="./img/products/small-image-back.png" alt="">
+            </div>
+            <div class="products__item-info">
+                <h3 class="products__name">Womens burnt orange casual tee £29.95</h3>
+                <p class="products__description">
+                    Classic casual t-shirt for women on the move.
+                    100% cotton.
+                </p>
+                <div class="products__buttons">
+                    <button class="products__button">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button class="products__button">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="products__button">
+                        <i class="fas fa-compress-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- look book block -->
+<section class="look-book">
+    <div class="look-book__container">
+        <div class="look-book__item">
+            <div class="look-book__img">
+                <img src="./img/look-book/image-1.png" alt="men’s" title="men’s">
+            </div>
+            <div class="look-book__text-part">
+                <h3 class="look-book__title">men’s</h3>
+                <h3 class="look-book__subtitle">lookbook</h3>
+                <p class="look-book__text">
+                    Lorem ipsum dolor sit amet eras facilisis
+                    consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                    Elementum metus facilisis ut phasellu.
+                </p>
+                <a href="javascript:undefined" class="look-book__button button">
+                    view now
+                </a>
+            </div>
+        </div>
+        <div class="look-book__item">
+            <div class="look-book__img">
+                <img src="./img/look-book/image-2.png" alt="men’s" title="men’s">
+            </div>
+            <div class="look-book__text-part">
+                <h3 class="look-book__title">women’s</h3>
+                <h3 class="look-book__subtitle">lookbook</h3>
+                <p class="look-book__text">
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames .
+                    Pellentesque laoreet quis enim et mattis. Quisque interdum felis tellus.
+                </p>
+                <a href="javascript:undefined" class="look-book__button button">
+                    view now
+                </a>
+            </div>
+        </div>
+        <div class="look-book__item">
+            <div class="look-book__img">
+                <img src="./img/look-book/image-3.png" alt="men’s" title="men’s">
+            </div>
+            <div class="look-book__text-part">
+                <h3 class="look-book__title">your</h3>
+                <h3 class="look-book__subtitle">lookbook</h3>
+                <p class="look-book__text">
+                    See an item you like and click the  button to add it to your lookbook where you can create your own
+                    perfect look.
+                    It’s like your own boutique!
+                </p>
+                <a href="javascript:undefined" class="look-book__button button">
+                    view now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+    <!-- Footer Top -->
+    <div class="footer__top">
+        <!-- Footer nav -->
+        <nav class="footer-nav container">
+            <ul class="nav-col">
+                <li class="nav-col__title">Information</li>
+                <li class="nav-col__item"><a href="javascript:undefined">The brand</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Local stores</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Customer service</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Privacy & cookies</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Site map</a></li>
+            </ul>
+            <ul class="nav-col">
+                <li class="nav-col__title">Why buy from us</li>
+                <li class="nav-col__item"><a href="javascript:undefined">Shipping & returns</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Secure shopping</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Testimonials</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Award winning</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Ethical trading</a></li>
+            </ul>
+            <ul class="nav-col">
+                <li class="nav-col__title">Your account</li>
+                <li class="nav-col__item"><a href="javascript:undefined">Sign in</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Register</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">View cart</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">View your lookbook</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Track an order</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Update information</a></li>
+            </ul>
+            <ul class="nav-col">
+                <li class="nav-col__title">Lookbook</li>
+                <li class="nav-col__item"><a href="javascript:undefined">Latest posts</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Men’s lookbook</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Women’s lookbook</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Lookbooks RSS feed</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">View your lookbook</a></li>
+                <li class="nav-col__item"><a href="javascript:undefined">Delete your lookbook</a></li>
+            </ul>
+            <ul class="nav-col">
+                <li class="nav-col__title">contact details</li>
+                <li class="nav-col__item">
+                    Head Office: Avenue Fashion,
+                    180-182 Regent Street, London.
+                </li>
+                <li class="nav-col__item">
+                    Telephone: <a href="tel:0123-456-789">0123-456-789</a>
+                </li>
+                <li class="nav-col__item">
+                    Email: <a href="mailto:">support@yourwebsite.com</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Footer info contact block -->
+        <div class="info-contact-blocks container">
+            <div class="info-contact-blocks__block dark">
+                <strong>award winner</strong>
+                <span>fashion awards 2016</span>
+            </div>
+            <div class="info-contact-blocks__block aqua">
+                <div class="social-networks">
+                    <a href="javascript:undefined" class="social-networks__link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="javascript:undefined" class="social-networks__link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="javascript:undefined" class="social-networks__link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="javascript:undefined" class="social-networks__link">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer bottom -->
+    <div class="footer__bottom">
+        <div class="footer__bottom-container container">
+            <div class="footer__site-copyright">
+                © 2016 Avenue Fashion™
+            </div>
+            <div class="footer__company-copyright">
+                <span>Design by RobbyDesigns.com</span> <span>Dev by Loremipsum.com</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--burger-->
+<div class="burger js-burger" style="display: none">
+    <button class="burger__btn burger__btn--open js-burger-open">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="burger__body">
+        <button class="burger__btn burger__btn--close js-burger-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="burger__scroller">
+            <a href="javascript:undefined" class="logo">
+                <img src="./img/logo.png" alt="Logo">
+            </a>
+            <div class="burger__auth">
+                <button class="auth">Register</button>
+                <button class="auth">Sign In</button>
+            </div>
+            <div class="currency">
+                <div class="currency__title">Currency:</div>
+                <select class="currency__select">
+                    <option value="GBP">GBP</option>
+                    <option value="RUB">RUB</option>
+                </select>
+            </div>
+            <div class="search">
+                <label class="search__label">
+                    <input placeholder="Search..." type="text">
+                    <i class="fas fa-search"></i>
+                </label>
+            </div>
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <span class="js-has-child">
+                            <span>mens</span>
+                            <span class="main-nav__arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </span>
+                        <div class="main-nav__popup">
+                            <div class="main-nav__popup-top">
+                                <ul class="nav-col">
+                                    <li class="nav-col__title">casuals</li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Hoodies &
+                                        Sweatshirts</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Polo Shirts</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Sportswear</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Trousers &
+                                        Chinos</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">T-Shirts</a>
+                                    </li>
+                                </ul>
+                                <ul class="nav-col">
+                                    <li class="nav-col__title">Formal</li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Shirts</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Suits</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Trousers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-nav__popup-bottom">
+                                Autumn sale!
+                                up to 50% off
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-nav__item">
+                        <span class="js-has-child">
+                            <span>womens</span>
+                            <span class="main-nav__arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </span>
+                        <div class="main-nav__popup">
+                            <div class="main-nav__popup-top">
+                                <ul class="nav-col">
+                                    <li class="nav-col__title">casuals</li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Hoodies &
+                                        Sweatshirts</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Polo Shirts</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Sportswear</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Trousers &
+                                        Chinos</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">T-Shirts</a>
+                                    </li>
+                                </ul>
+                                <ul class="nav-col">
+                                    <li class="nav-col__title">Formal</li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Shirts</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Suits</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Trousers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-nav__popup-bottom">
+                                Autumn sale!
+                                up to 50% off
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="javascript:undefined">
+                            the brand
+                        </a>
+                    </li>
+                    <li class="main-nav__item">
+                        <span class="js-has-child">
+                            <span> local stores</span>
+                            <span class="main-nav__arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </span>
+                        <div class="main-nav__popup">
+                            <div class="main-nav__popup-top">
+                                <ul class="nav-col">
+                                    <li class="nav-col__title">casuals</li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Hoodies &
+                                        Sweatshirts</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Polo Shirts</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Sportswear</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Trousers &
+                                        Chinos</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">T-Shirts</a>
+                                    </li>
+                                </ul>
+                                <ul class="nav-col">
+                                    <li class="nav-col__title">Formal</li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Shirts</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Suits</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Trousers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-nav__popup-bottom">
+                                Autumn sale!
+                                up to 50% off
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-nav__item">
+                        <span class="js-has-child">
+                            <span>look book</span>
+                            <span class="main-nav__arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </span>
+                        <div class="main-nav__popup">
+                            <div class="main-nav__popup-top">
+                                <ul class="nav-col">
+                                    <li class="nav-col__title">casuals</li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Hoodies &
+                                        Sweatshirts</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Polo Shirts</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Sportswear</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Trousers &
+                                        Chinos</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">T-Shirts</a>
+                                    </li>
+                                </ul>
+                                <ul class="nav-col">
+                                    <li class="nav-col__title">Formal</li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Jackets</a>
+                                    </li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Shirts</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Suits</a></li>
+                                    <li class="nav-col__item"><a href="javascript:undefined">Trousers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-nav__popup-bottom">
+                                Autumn sale!
+                                up to 50% off
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="burger__bg js-burger-bg"></div>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

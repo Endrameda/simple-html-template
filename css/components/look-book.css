@@ -1,0 +1,6 @@
+.look-book__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 27px; }
+
+/*# sourceMappingURL=look-book.css.map */

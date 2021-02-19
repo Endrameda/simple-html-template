@@ -1,0 +1,40 @@
+.nav-col {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &__title {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray-575);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+    @media all and (max-width: map-get($breaks, tablet_lg)) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__item {
+    color: var(--gray-72);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+
+
+    &:not(:last-child) {
+      margin-bottom: 11px;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--gray-72);
+      word-break: break-all;
+      transition: color 200ms linear;
+
+      &:hover {
+        color: var(--black);
+      }
+    }
+  }
+}

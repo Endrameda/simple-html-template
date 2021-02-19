@@ -1,0 +1,24 @@
+.button {
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: none;
+  border: 2px solid var(--gray-73);
+  color: var(--dark-text);
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 3px;
+  padding: 1.2em 2em;
+  transition-property: color, border-color, transform;
+  transition-duration: 200ms;
+  cursor: pointer;
+
+  @media all and (max-width: map-get($breaks, tablet)) {
+    font-size: 12px;
+  }
+
+  &:hover {
+    background-color: var(--aqua);
+    color: var(--white);
+    border-color: var(--aqua);
+  }
+}

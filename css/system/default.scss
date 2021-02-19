@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--base-fs);
+}
+
+html,
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: var(--montserrat);
+    line-height: var(--base-lh);
+    background-color: var(--white);
+    -webkit-font-smoothing: antialiased;
+    min-width: 360px;
+}
+
+.container {
+    max-width: map-get($container, desktop);
+    padding-right: $gutter;
+    padding-left: $gutter;
+    margin-right: auto;
+    margin-left: auto;
+    
+    @media all and (max-width: map-get($breaks, tablet_lg)) {
+        max-width: map-get($container, tablet);
+    }
+    
+    @media all and (max-width: map-get($breaks, tablet)) {
+        max-width: map-get($container, mobile);
+    }
+
+    @media all and (max-width: map-get($breaks, mobile)) {
+        max-width: map-get($container, mobile_sm);
+    }
+}
+
+td,
+th {
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,31 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+
+  &__container {
+    position: relative;
+  }
+
+  .swiper-slide {
+    text-align: center;
+  }
+
+  button {
+    position: absolute;
+    bottom: 125px;
+    right: 16%;
+    
+    @media all and (max-width: map-get($breaks, tablet_lg)) {
+      bottom: 40px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    @media all and (max-width: map-get($breaks, mobile)) {
+      position: static;
+      transform: translateX(0);
+      margin-top: 20px;
+    }
+  }
+}

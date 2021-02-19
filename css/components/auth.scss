@@ -1,0 +1,22 @@
+.auth {
+  background-color: transparent;
+  color: var(--gray-999);
+  box-shadow: none;
+  font-size: 13px;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+
+  @media all and (max-width: map-get($breaks, tablet_lg)) {
+    display: none;
+  }
+
+  &:first-child {
+    margin-right: 35px;
+    padding: 5px 10px;
+
+    @media all and (max-width: map-get($breaks, tablet_lg)) {
+      margin-right: 10px;
+    }
+  }
+}

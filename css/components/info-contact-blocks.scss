@@ -1,0 +1,74 @@
+.info-contact-blocks {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  
+  @media all and (max-width: map-get($breaks, tablet)) {
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__block {
+    flex: 0 0 48.7%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    padding: 1.111em;
+    text-transform: uppercase;
+    min-height: 200px;
+    line-height: 1.2;
+
+    @media all and (max-width: map-get($breaks, tablet_lg)) {
+      font-size: 15px;
+    }
+
+    @media all and (max-width: map-get($breaks, mobile)) {
+      font-size: 10px;
+    }
+
+    @media all and (max-width: map-get($breaks, tablet)) {
+      flex: 1 1 auto;
+      width: 100%;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+
+      &:not(:last-child) {
+        margin-bottom: 2em;
+      }
+    }
+
+    @media all and (max-width: map-get($breaks, mobile)) {
+      max-width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 1em;
+      }
+    }
+
+    > strong {
+      font-size: 2em;
+      color: var(--white);
+    }
+
+    > span {
+      font-size: 2em;
+      color: var(--white);
+      letter-spacing: 0.05em;
+    }
+
+    &.dark {
+      background-color: var(--dark-bg-333);
+    }
+
+    &.aqua {
+      background-color: var(--aqua);
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.burger {
+  $self: &;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+  @media all and (max-width: map-get($breaks, tablet_lg)) {
+    display: block !important;
+  }
+
+  &.active {
+    #{$self}__bg {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    #{$self}__body {
+      transform: translateX(0);
+    }
+  }
+
+  &__btn {
+    border: none;
+    box-shadow: none;
+    background-color: var(--dark-bg-333);
+    color: var(--white);
+    width: 40px;
+    height: 45px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline-color: var(--aqua);
+
+    &--open {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    
+    &--close {
+      position: absolute;
+      left: 100%;
+      top: 0;
+    }
+  }
+
+  &__body {
+    position: relative;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--white-smoke);
+    padding: 20px;
+    transition: 0.2s;
+    transform: translateX(-420px);
+  }
+
+  &__scroller {
+    height: 100%;
+    overflow-y: auto;
+
+    .logo {
+      display: block;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .currency {
+      justify-content: center;
+      margin-bottom: 5px;
+    }
+
+    .search {
+      margin-bottom: 5px;
+
+      &__label {
+        width: 100%;
+      }
+    }
+  }
+
+  &__bg {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
+}

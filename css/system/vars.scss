@@ -1,0 +1,48 @@
+:root {
+  // fonts
+  --base-fs: 16px;
+  --base-lh: 1;
+  --base-font: Arial, sans-serif;
+  --roboto: 'Roboto', var(--base-font);
+  --montserrat: 'Montserrat', var(--base-font);
+
+  // colors
+  --aqua: #00c8c8;
+  --white: white;
+  --black: black;
+  --error: #eb5757;
+  --success: #27ae60;
+  --white-smoke: #f8f8f8;
+  --dark-bg-333: #333;
+  --gray-999: #999999;
+  --gray-777: #777777;
+  --gray-575: #575153;
+  --gray-72: #727272;
+  --gray-73: #737373;
+  --dark-text: #454647;
+}
+
+//===container=====================
+$body_max_width: 1920px;
+$gutter: 10px;
+
+//===breaks========================
+$breaks: (
+        fhd: 1920px,
+        desktop: 1600px,
+        laptop: 1366px,
+        tablet_lg: 1280px,
+        tablet: 1024px,
+        mobile: 720px,
+        mobile_md: 640px,
+        mobile_sm: 500px,
+        mobile_xs: 360px,
+);
+
+//===container-width========================
+$container: (
+        desktop: 1190px,
+        tablet: 1024px,
+        mobile: 740px,
+        mobile_sm: 100%,
+);

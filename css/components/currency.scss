@@ -1,0 +1,21 @@
+.currency {
+  display: flex;
+  align-self: center;
+
+  &__title {
+    font-size: 13px;
+    line-height: 21px;
+    color: var(--gray-777);
+  }
+
+  &__select {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    color: var(--gray-777);
+    font-size: 13px;
+    line-height: 21px;
+    padding: 0 5px;
+    cursor: pointer;
+  }
+}

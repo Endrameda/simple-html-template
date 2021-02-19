@@ -1,0 +1,22 @@
+.social-networks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 36px;
+  
+  @media all and (max-width: map-get($breaks, tablet_lg)) {
+    font-size: 30px;
+  }
+
+  @media all and (max-width: map-get($breaks, mobile)) {
+    font-size: 25px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1em;
+    display: inline-block;
+    margin: 0.7em;
+  }
+}

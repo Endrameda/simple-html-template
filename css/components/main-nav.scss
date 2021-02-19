@@ -1,0 +1,130 @@
+.main-nav {
+  $self: &;
+  margin-right: 114px;
+  padding-top: 6px;
+
+  @media all and (max-width: map-get($breaks, tablet_lg)) {
+    margin-right: 0;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    
+    @media all and (max-width: map-get($breaks, tablet_lg)) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    position: relative;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--dark-text);
+    transition: color 0.2s ease;
+    text-transform: uppercase;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 58px;
+
+      @media all and (max-width: map-get($breaks, tablet_lg)) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    &.active, &:hover {
+      color: var(--aqua);
+
+      > a {
+        color: var(--aqua);
+      }
+    }
+
+    &.active {
+      #{$self}__popup {
+        visibility: visible;
+        opacity: 1;
+
+        @media all and (max-width: map-get($breaks, tablet_lg)) {
+          display: none;
+        }
+      }
+    }
+
+    span {
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--dark-text);
+      transition: color 0.2s ease;
+    }
+  }
+
+  &__arrow {
+    display: block;
+  }
+
+  &__popup {
+    position: absolute;
+    left: 0;
+    background-color: var(--white);
+    top: calc(100% + 10px);
+    padding: 26px;
+    width: 468px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease;
+    filter: drop-shadow(0px 17px 12px rgba(0,0,0,0.14));
+
+    @media all and (max-width: map-get($breaks, tablet_lg)) {
+      opacity: 1;
+      visibility: visible;
+      display: none;
+      width: 100%;
+      position: relative;
+      padding: 10px;
+      filter: none;
+    }
+
+    &-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 44px;
+      margin-bottom: 60px;
+      
+      @media all and (max-width: map-get($breaks, tablet_lg)) {
+        margin-bottom: 30px;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      align-items: center;
+      min-height: 200px;
+      padding: 20px;
+      text-align: center;
+      background-color: var(--dark-bg-333);
+      color: var(--white);
+      font-size: 36px;
+      letter-spacing: 2px;
+      line-height: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      @media all and (max-width: map-get($breaks, tablet_lg)) {
+        padding: 20px;
+        font-size: 20px;
+        line-height: 1.2;
+        min-height: 0;
+      }
+    }
+  }
+}
